@@ -133,7 +133,7 @@ You can store sensitive data in a protected configuration, which is encrypted an
 | ---- | ---- | ---- |
 | apiVersion | Not applicable | You can find the most up-to-date API version by using [Resource Explorer](https://resources.azure.com/) or by using the command `az provider list -o json` in the Azure CLI. |
 | fileUris | Optional | URLs for files to be downloaded. |
-| commandToExecute | Required if `script` isn't set | The entry point script to run. Use this property instead of `script` if your command contains secrets such as passwords. |
+| commandToExecute | Required if `script` isn't set | The entry point script to run. |
 | script | Required if `commandToExecute` isn't set | A Base64-encoded and optionally gzip'ed script run by `/bin/sh`. |
 | skipDos2Unix | Optional | Set this value to `false` if you want to skip dos2unix conversion of script-based file URLs or scripts. |
 | timestamp | Optional | Change this value only to trigger a rerun of the script. Any integer value is acceptable, as long as it's different from the previous value. |
